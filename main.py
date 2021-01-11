@@ -1,8 +1,10 @@
 import discord
 from discord import utils
 import config
-from discord import voice_client
-
+from discord.utils import get
+from discord.ext import commands
+from discord.ext.commands import Bot
+import asyncio
 intents = discord.Intents.all()
 
 
@@ -63,6 +65,19 @@ class MyClient(discord.Client):
             print("[ERROR] KeyError, no role found for " + emoji)
         except Exception as e:
             print(repr(e))
+
+@Bot.command()
+async def join(ctx):
+    global voice
+    channel = ctx.message.author.voice.channel
+    voice = get(client.voice_clients, guild = ctx.guild)
+
+    if voice and voice.is_connected():
+        await voice.move_to(channel)
+    else:
+        voice = await channel.connect()
+        await ctx.send(f'Bot is connected to channel: {channel}')
+
 
 
 
