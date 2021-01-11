@@ -65,6 +65,7 @@ class MyClient(discord.Client):
             print(repr(e))
 
 
+
 # RUN
 client = MyClient(intents=intents)
 client.run(config.TOKEN)
