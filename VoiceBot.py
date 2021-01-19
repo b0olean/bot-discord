@@ -1,6 +1,6 @@
 import discord
 from discord.utils import get
-import config
+import config2
 import youtube_dl
 from discord.ext import commands
 import os
@@ -87,4 +87,4 @@ async def play(ctx, url: str):
     await ctx.send(f'Сейчас проигрывает музыка: {song_name[0]}')
 
 
-client.run(config.TOKEN2)
+client.run(config2.TOKEN2)
