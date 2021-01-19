@@ -87,4 +87,4 @@ async def play(ctx, url: str):
     await ctx.send(f'Сейчас проигрывает музыка: {song_name[0]}')
 
 
-client.run(config.TOKEN)
+client.run(config.TOKEN2)
