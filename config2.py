@@ -1,1 +1,1 @@
-TOKEN2 = 'ODAwNDA1MjQxMjYxOTgxNzE4.YARpeA.i_uNBfgSuMXPEGKhPPn4kCBA_u8'
+TOKEN2 = 'тут может быть ваш токен'
