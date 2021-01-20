@@ -16,4 +16,4 @@
 ### Чтобы добавить этих ботов на сервер, достаточно перейти по ссылкам ниже:
 + [Бот с выдачей ролей по нажатию](https://discord.com/oauth2/authorize?client_id=786266232084627464&scope=bot&permissions=0) (поскольку этот бот настроен на определенные реакции, то он просто будет у Вас на сервере.  
 Возможно, со временем, бот будет более продуман)
-+ [Бот для подключения к voice-чатам](https://discord.com/oauth2/authorize?client_id=800405241261981718&scope=bot&permissions=0)
++ [Бот для подключения к voice-чатам](https://discord.com/api/oauth2/authorize?client_id=756073218279866461&permissions=0&scope=bot)
